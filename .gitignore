@@ -1,0 +1,4 @@
+*.DS_Store
+config/instruction-sync-machines.tsv
+config/consolidation-claude.md
+config/consolidation-codex.md

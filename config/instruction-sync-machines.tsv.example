@@ -1,0 +1,6 @@
+# id|ssh_host|codex_path|claude_path
+# Use ssh_host=local for the machine running the script.
+# Copy this file to instruction-sync-machines.tsv and fill in your machine details.
+my-primary|local|~/.codex/AGENTS.md|~/.claude/CLAUDE.md
+my-laptop|my-laptop|~/.codex/AGENTS.md|~/.claude/CLAUDE.md
+my-desktop|my-desktop|~/.codex/AGENTS.md|~/.claude/CLAUDE.md
