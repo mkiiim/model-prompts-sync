@@ -54,6 +54,8 @@ bash scripts/instruction-sync.sh deploy
 bash scripts/instruction-sync.sh verify
 ```
 
+Caution: `deploy` overwrites the machine files with the canonical files. Any rule added directly on a machine since the last consolidation — by hand or by other tooling — is lost without being surfaced. When in doubt, run `gather` and `diff` first and confirm the drift shows nothing worth keeping.
+
 Deployment targets are taken from `config/instruction-sync-machines.tsv`: `AGENTS.md` is copied to each machine's `codex_path`, `CLAUDE.md` to each machine's `claude_path`.
 
 Note: `deploy` and `verify` always operate on both canonical files, so both `AGENTS.md` and `CLAUDE.md` must exist in the repo before running them — even if you only use one assistant.
